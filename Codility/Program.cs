@@ -10,6 +10,9 @@ namespace Codility
     {
         static void Main(string[] args)
         {
+            var number = 529;
+            var binaryGap = BinaryGap.CountHighestBinaryGap(number);
+            Console.WriteLine(binaryGap);
         }
     }
 }
