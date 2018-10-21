@@ -22,9 +22,21 @@ namespace Codility
         /// <param name="array"></param>
         /// <param name="k"></param>
         /// <returns></returns>
-        public int[] RotateArrayKtimes(int[] array, int k)
+        public  static int[] RotateArrayKtimes(int[] array, int k)
         {
-            return array;
+            int[] array2 = new int[array.Length];
+            int numberOfElement = array.Length;
+            var lastElement = array[numberOfElement - 1];
+            array2[0] = lastElement;
+            for (int j = 1; j <= k; j++)
+            {
+                for (int i = 1; i < array.Length; i++)
+                {
+                    array2[i] = array[i - 1];
+                }
+            }
+            
+            return array2;
         }
     }
 }
