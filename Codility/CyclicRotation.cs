@@ -26,17 +26,23 @@ namespace Codility
         {
             int[] array2 = new int[array.Length];
             int numberOfElement = array.Length;
+
             var lastElement = array[numberOfElement - 1];
-            array2[0] = lastElement;
-            for (int j = 1; j <= k; j++)
-            {
+          
+               // lastElement = array2[numberOfElement - 1];
+                array2[0] = lastElement;
                 for (int i = 1; i < array.Length; i++)
                 {
                     array2[i] = array[i - 1];
                 }
+            k--;
+            if (k >= 1)
+            {
+                array2 = RotateArrayKtimes(array2, k);
             }
-            
+          
             return array2;
-        }
+        }      
+        
     }
 }
