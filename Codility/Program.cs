@@ -15,7 +15,7 @@ namespace Codility
             //Console.WriteLine(binaryGap);
 
             int[] array = { 3, 8, 9, 7, 6,3,6,7,5,6,7,45,34,6,23,-46 };
-           var rotatearray = CyclicRotation.RotateArrayKtimes(array, 3);
+           var rotatearray = CyclicRotation.solution(array, 3);
             foreach (var item in rotatearray)
             {
                 Console.WriteLine(item);

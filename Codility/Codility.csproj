@@ -43,13 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryGap.cs" />
-    <Compile Include="CyclicRotation.cs" />
+    <Compile Include="Lesson1\BinaryGap.cs" />
+    <Compile Include="Lesson2\CyclicRotation.cs" />
+    <Compile Include="Lesson2\OddOccurrencesInArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lesson3\" />
+    <Folder Include="Lesson4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
